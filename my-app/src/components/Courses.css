@@ -1,0 +1,83 @@
+.courses {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.course-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.popular {
+  border: 2px solid #667eea;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  padding: 4px 16px;
+  border-radius: 50px;
+  color: white;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.course-icon {
+  font-size: 64px;
+  margin-bottom: 1rem;
+}
+
+.course-card h3 {
+  margin-bottom: 1rem;
+}
+
+.course-info {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-price {
+  font-size: 28px;
+  font-weight: 800;
+  color: #667eea;
+  margin: 1rem 0;
+}
+
+.course-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.course-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
